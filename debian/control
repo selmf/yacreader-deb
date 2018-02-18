@@ -1,0 +1,20 @@
+Source: yacreader
+Section: contrib/graphics
+Priority: optional
+Maintainer: Felix Kauselmann <licorn@gmail.com>
+Build-Depends: debhelper (>= 9), qt5-qmake, qtbase5-dev, qtmultimedia5-dev,
+  libpoppler-qt5-dev, qtscript5-dev, libqt5opengl5-dev, libglu1-mesa-dev,
+  libunarr-dev, qtdeclarative5-dev
+Standards-Version: 4.1.1
+Homepage: http://www.yacreader.com
+
+Package: yacreader
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, qml-module-qtquick-controls
+Suggests: qrencode, qt5-image-formats-plugins
+Description: Yet another comic reader
+ YACReader is a free cross-platform comic reader with support for multiple
+ comic files and image formats. YACReader comes with YACReaderLibrary,
+ an application for browsing and managing your comic collections with
+ various smooth transition effects. YACReader is fast, easy to use and
+ all you need to enjoy your digital comics.

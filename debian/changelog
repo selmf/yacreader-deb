@@ -1,0 +1,5 @@
+yacreader (9.0.0-2) UNRELEASED; urgency=low
+
+  * Initial release (Closes: #755731) 
+
+ -- Felix Kauselmann <herr_k@localhost.localdomain>  Sun, 18 Feb 2018 13:37:48 +0100

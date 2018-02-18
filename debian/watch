@@ -1,0 +1,2 @@
+version=3
+https://bitbucket.org/luisangelsm/yacreader/downloads .*/(\d\S*)\.tar\.xz
