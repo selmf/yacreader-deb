@@ -1,2 +1,3 @@
-version=3
-https://bitbucket.org/luisangelsm/yacreader/downloads .*/(\d\S*)\.tar\.xz
+version=4
+opts=filenamemangle=s/.+\/v?(\d\S+)\.tar\.gz/<project>-$1\.tar\.xz/ \
+  https://github.com/yacreader/yacreader/tags .*/v?(\d\S+)\.tar\.xz

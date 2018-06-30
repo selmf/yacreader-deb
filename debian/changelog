@@ -1,5 +1,5 @@
-yacreader (9.0.0-2) UNRELEASED; urgency=low
+yacreader (9.0.0-3) UNRELEASED; urgency=low
 
-  * Initial release (Closes: #755731) 
+  * Initial release (Closes: #755731)
 
- -- Felix Kauselmann <herr_k@localhost.localdomain>  Sun, 18 Feb 2018 13:37:48 +0100
+ -- Felix Kauselmann <licorn@gmail.com>  Wed, 30 May 2018 16:46:24 +0200

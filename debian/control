@@ -1,5 +1,5 @@
 Source: yacreader
-Section: contrib/graphics
+Section: graphics
 Priority: optional
 Maintainer: Felix Kauselmann <licorn@gmail.com>
 Build-Depends: debhelper (>= 9), qt5-qmake, qtbase5-dev, qtmultimedia5-dev,
