@@ -1,5 +1,5 @@
-yacreader (9.0.0-3) UNRELEASED; urgency=low
+yacreader (9.5.0-1) unstable; urgency=medium
 
   * Initial release (Closes: #755731)
 
- -- Felix Kauselmann <licorn@gmail.com>  Wed, 30 May 2018 16:46:24 +0200
+ -- Felix Kauselmann <licorn@gmail.com>  Sun, 01 Jul 2018 11:45:30 +0200
