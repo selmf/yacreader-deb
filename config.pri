@@ -11,11 +11,8 @@ QT_VER_MIN = $$member(QT_VERSION, 1)
 lessThan(QT_VER_MAJ, 5) {
 error(YACReader requires Qt 5 or newer but Qt $$[QT_VERSION] was detected.)
   }
-lessThan(QT_VER_MIN, 6) {
-  warning ("Qt < 5.6 detected. Compilation will probably work, but some qml based components in YACReaderLibrary (GridView, InfoView) will fail at runtime.")
-  }
-lessThan(QT_VER_MIN, 4):!CONFIG(no_opengl) {
-  error ("You need at least Qt 5.4 to compile YACReader or YACReaderLibrary.")
+lessThan(QT_VER_MIN, 6):!CONFIG(no_opengl) {
+  error ("You need at least Qt 5.6 to compile YACReader or YACReaderLibrary.")
   }
 
 # Disable coverflow for arm targets
@@ -33,8 +30,16 @@ CONFIG(no_opengl) {
 }
 
 # default value for comic archive decompression backend
-!CONFIG(unarr):!CONFIG(7zip) {
+unix:!macx:!CONFIG(unarr):!CONFIG(7zip) {
   CONFIG += unarr
+}
+
+win32:!CONFIG(unarr):!CONFIG(7zip) {
+  CONFIG += 7zip
+}
+
+macx:!CONFIG(unarr):!CONFIG(7zip) {
+  CONFIG += 7zip
 }
 
 # default values for pdf render backend
@@ -47,5 +52,5 @@ unix:!macx:!CONFIG(poppler):!CONFIG(pdfium):!CONFIG(no_pdf) {
 }
 
 macx:!CONFIG(pdfkit):!CONFIG(pdfium):!CONFIG(no_pdf) {
-  CONFIG += pdfium
+  CONFIG += pdfkit
 }
