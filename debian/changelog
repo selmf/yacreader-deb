@@ -1,8 +1,10 @@
 yacreader (9.6.2.1909283-1) UNRELEASED; urgency=medium
 
   * New upstream version 9.6.2.1909283
+  * remove unneeded patches
+  * Update dependencies
 
- -- Felix Kauselmann <licorn@gmail.com>  Mon, 23 Dec 2019 17:16:25 +0100
+ -- Felix Kauselmann <licorn@gmail.com>  Mon, 23 Dec 2019 22:47:02 +0100
 
 yacreader (9.5.0-1) unstable; urgency=medium
 
