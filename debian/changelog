@@ -1,4 +1,4 @@
-yacreader (9.6.2.1909283-1) UNRELEASED; urgency=medium
+yacreader (9.6.2.1909283-1) unstable; urgency=medium
 
   * New upstream version 9.6.2.1909283
   * remove unneeded patches
