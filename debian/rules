@@ -14,3 +14,12 @@ export QT_SELECT=qt5
 
 #override_dh_auto_configure:
 #	dh_auto_configure -- CONFIG+=pdfium
+
+# conditional override to allow builds on archlinux
+override_dh_shlibdeps:
+	:
+ifneq (,$(wildcard /etc/arch-release))
+	dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
+else
+	dh_shlibdeps
+endif
