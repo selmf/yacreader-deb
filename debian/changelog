@@ -1,10 +1,11 @@
-yacreader (9.7.0.2009038-1) UNRELEASED; urgency=medium
+yacreader (9.7.1.2009123-1) unstable; urgency=medium
 
   * Remove menu file
-  * Update watchfile
-  * New upstream version 9.7.0.2009038
+  * Add rule to skip shlibsdeps on Archlinux
+  * New upstream version 9.7.1
+  * Fix watchfile
 
- -- Felix Kauselmann <licorn@gmail.com>  Fri, 04 Sep 2020 17:13:10 +0200
+ -- Felix Kauselmann <licorn@gmail.com>  Sun, 08 Nov 2020 19:17:03 +0100
 
 yacreader (9.6.2.1909283-1) unstable; urgency=medium
 
