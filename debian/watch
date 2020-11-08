@@ -1,3 +1,2 @@
 version=4
-opts=filenamemangle=s/.+\/v?(\d\S+)\.tar\.xz/yacreader-$1\.tar\.xz/ \
-  https://github.com/yacreader/yacreader/releases/latest .*/yacreader-?(\d\S+)-src\.tar\.xz
+https://github.com/yacreader/yacreader/releases/latest .*/yacreader-?(\d\S+)-src\.tar\.xz
