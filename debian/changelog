@@ -4,6 +4,9 @@ yacreader (9.7.1.2009123-1) unstable; urgency=medium
   * Add rule to skip shlibsdeps on Archlinux
   * New upstream version 9.7.1
   * Fix watchfile
+  * Update copyright
+  * Add lintian overrides for bad source (translator.html)
+  * Require at least Debhelper 10 for building
 
  -- Felix Kauselmann <licorn@gmail.com>  Sun, 08 Nov 2020 19:17:03 +0100
 
