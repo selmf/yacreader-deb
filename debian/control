@@ -3,14 +3,15 @@ Section: graphics
 Priority: optional
 Maintainer: Felix Kauselmann <licorn@gmail.com>
 Build-Depends: debhelper (>= 10), qt5-qmake, qtbase5-dev, qtmultimedia5-dev,
-  libpoppler-qt5-dev, libqt5opengl5-dev, libunarr-dev, qtdeclarative5-dev
+  libpoppler-qt5-dev, libqt5opengl5-dev, libunarr-dev, qtdeclarative5-dev,
+  libqt5svg5-dev
 Standards-Version: 4.1.1
 Homepage: http://www.yacreader.com
 
 Package: yacreader
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, qml-module-qtquick-controls,
-  qml-module-qtgraphicaleffects, libqt5svg5, qt5-image-formats-plugins
+  qml-module-qtgraphicaleffects, qt5-image-formats-plugins
 Suggests: libqrencode4
 Description: Yet another comic reader
  YACReader is a free cross-platform comic reader with support for multiple
