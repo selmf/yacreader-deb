@@ -4,13 +4,13 @@ Priority: optional
 Maintainer: Felix Kauselmann <licorn@gmail.com>
 Build-Depends: debhelper (>= 10), qt5-qmake, qtbase5-dev, qtmultimedia5-dev,
   libpoppler-qt5-dev, libqt5opengl5-dev, libunarr-dev, qtdeclarative5-dev,
-  libqt5svg5-dev
+  libqt5svg5-dev, qtquickcontrols2-5-dev
 Standards-Version: 4.1.1
 Homepage: http://www.yacreader.com
 
 Package: yacreader
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, qml-module-qtquick-controls,
+Depends: ${shlibs:Depends}, ${misc:Depends}, qml-module-qtquick-controls2,
   qml-module-qtgraphicaleffects, qt5-image-formats-plugins
 Suggests: libqrencode4
 Description: Yet another comic reader
