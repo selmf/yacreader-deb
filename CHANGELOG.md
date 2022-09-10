@@ -2,7 +2,58 @@
 
 Version counting is based on semantic versioning (Major.Feature.Patch)
 
-## WIP
+## 9.9.1
+
+### YACReader
+* Fix "go to" dialog not clearing the page number between runs.
+* Fix scroll behavior in "go to flow" view (macos).
+
+### YACReaderLibrary
+* Fix scroll behavior in "cover flow" view (macos).
+* Fix grid view unable to scroll in some systems.
+
+
+## 9.9.0
+
+### YACReader
+* Show error when opening bad open recent entries
+* GoTo page: Fix segfault when entering page numbers greater than comic's page count
+  (toolbar and page flow)
+* Initialize GotoFlow on current page, not cover
+* Quick navigation mode: Fix page index error when using both mouse and keyboard for navigation
+* Remove obsolete double page mode debug messages
+* Support HDPI screens.
+* Use one wheel mouse step per page in full page mode.
+* Add updated MIME types to .desktop file for .cbz and .cbr
+* Add settings to control page turning behaviour on scroll.
+* Make forward and backward buttons in a mouse turn pages.
+* Don't crash if bookmarks get corrupt for some reason.
+* Magnifying glass fixes and improvements.
+* Shorcuts customization fixes.
+
+### YACReaderLibrary
+* Support HDPI screens.
+* Support import legacy XML info in comic files.
+* Ensure that comic info exports use .ydb as file suffix.
+* Enable arrow keys navigation in the folders tree view.
+* Add `Publication Date` column to the comics table view.
+* Use a scale effect in the comics grids on mouse over.
+* Add system info to the help/about dialog to help reporting bugs.
+* Fix selection when clicking on a folder in search mode.
+* Fix defaul value for manga/comic mode in folders.
+* Add an edit for filtering series results returned by Comic Vine.
+* Support editing comics tags sequentially without leaving the edit dialog.
+* Fix export/import comics info.
+
+### Server
+* Always serve a cover image to the iOS client for any folder that has content (requeries a library content update).
+
+## 9.8.2
+### YACReaderLibrary
+* Fix opening comics from the continue reading banner.
+* Make available next/prev comic covers in the iOS app while reading. (ios app 3.16.1 needed)
+### Server
+* Make available next/prev comic covers in the iOS app while reading. (ios app 3.16.1 needed)
 
 ## 9.8.1
 ### YACReaderLibrary
