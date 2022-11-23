@@ -3,7 +3,11 @@
 # for a more detailed description, see INSTALL.TXT
 
 CONFIG += c++17
-win32:QMAKE_CXXFLAGS += /std:c++17 #enable c++17 explicitly in msvc
+
+win32 {
+    #enable c++17 explicitly in msvc
+    QMAKE_CXXFLAGS += /std:c++17 /Zc:__cplusplus /permissive-
+}
 
 DEFINES += NOMINMAX
 
@@ -46,8 +50,10 @@ isEmpty(QMAKE_TARGET.arch) {
   QMAKE_TARGET.arch = $$QMAKE_HOST.arch
 }
 contains(QMAKE_TARGET.arch, arm.*)|contains(QMAKE_TARGET.arch, aarch.*) {
-  message("Building for ARM architecture. Disabling OpenGL coverflow ...")
-  CONFIG += no_opengl
+  !macx { # Apple silicon supports opengl
+    CONFIG += no_opengl
+    message("Building for ARM architecture. Disabling OpenGL coverflow. If you know that your ARM arquitecture supports opengl, please edit config.pri to enable it.")
+  }
 }
 
 # build without opengl widget support
