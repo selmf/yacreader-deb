@@ -1,9 +1,16 @@
-yacreader (9.10.0-1) UNRELEASED; urgency=medium
+yacreader (9.10.0-2) unstable; urgency=medium
+
+  * Update dependencies
+
+ -- Felix Kauselmann <licorn@gmail.com>  Fri, 25 Nov 2022 09:59:09 +0100
+
+yacreader (9.10.0-1) unstable; urgency=medium
 
   * New upstream version 9.10.0
-  * Unix: Fix regression in translation install target
+  * Fix regression in translation install target
+  * Add debian/clean
 
- -- Felix Kauselmann <licorn@gmail.com>  Wed, 23 Nov 2022 14:21:05 +0100
+ -- Felix Kauselmann <licorn@gmail.com>  Thu, 24 Nov 2022 12:39:05 +0100
 
 yacreader (9.9.1-1) unstable; urgency=medium
 
