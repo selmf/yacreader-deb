@@ -1,2 +1,5 @@
 version=4
-https://github.com/yacreader/yacreader/releases/latest .*/yacreader-?(\d\S+)-src\.tar\.xz
+
+opts="searchmode=plain" \
+https://api.github.com/repos/YACReader/@PACKAGE@/releases?per_page=50 \
+https://github.com/YACReader/@PACKAGE@/releases/download/@ANY_VERSION@/@PACKAGE@-\d[\.\d]*-src.tar.xz
