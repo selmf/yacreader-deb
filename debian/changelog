@@ -1,3 +1,10 @@
+yacreader (9.11.0-1) UNRELEASED; urgency=medium
+
+  * Update Debian watch file for newer Github API
+  * New upstream version 9.11.0
+
+ -- Felix Kauselmann <licorn@gmail.com>  Sun, 29 Jan 2023 11:24:47 +0100
+
 yacreader (9.10.0-2) unstable; urgency=medium
 
   * Update dependencies
