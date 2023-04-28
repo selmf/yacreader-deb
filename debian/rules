@@ -1,12 +1,15 @@
 #!/usr/bin/make -f
-include /usr/share/dpkg/default.mk
-
 # See debhelper(7) (uncomment to enable)
 # output every command that modifies files on the build system.
-# DH_VERBOSE = 1
+#DH_VERBOSE = 1
 
-# see EXAMPLES in dpkg-buildflags(1) and read /usr/share/dpkg/*
-DPKG_EXPORT_BUILDFLAGS = 1
+# see FEATURE AREAS in dpkg-buildflags(1)
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+# see ENVIRONMENT in dpkg-buildflags(1)
+# package maintainers to append CFLAGS
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+# package maintainers to append LDFLAGS
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 export QT_SELECT=qt5
 
@@ -16,7 +19,12 @@ export QT_SELECT=qt5
 override_dh_installsystemd:
 	dh_installsystemd --no-enable --no-start
 
-#override_dh_auto_configure:
+override_dh_auto_install:
+	make INSTALL_ROOT=$(CURDIR)/debian/yacreader sub-YACReader-install_subtargets
+	make INSTALL_ROOT=$(CURDIR)/debian/yacreader sub-YACReaderLibrary-install_subtargets
+	make INSTALL_ROOT=$(CURDIR)/debian/yacreaderlibraryserver sub-YACReaderLibraryServer-install_subtargets
+
+#override_dh_auto_configure:override
 #	dh_auto_configure -- CONFIG+=pdfium
 
 # conditional override to allow builds on archlinux
