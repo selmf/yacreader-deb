@@ -1,3 +1,11 @@
+yacreader (9.12.0-1) unstable; urgency=medium
+
+  * Override dh_installsystemd
+  * New upstream version 9.12.0
+  * Move yacreaderlibraryserver to seperate package
+
+ -- Felix Kauselmann <licorn@gmail.com>  Fri, 28 Apr 2023 16:19:36 +0200
+
 yacreader (9.11.0-1) unstable; urgency=medium
 
   * Update Debian watch file for newer Github API
