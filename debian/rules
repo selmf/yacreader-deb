@@ -13,6 +13,9 @@ export QT_SELECT=qt5
 %:
 	dh $@
 
+override_dh_installsystemd:
+	dh_installsystemd --no-enable --no-start
+
 #override_dh_auto_configure:
 #	dh_auto_configure -- CONFIG+=pdfium
 
