@@ -11,7 +11,8 @@ Homepage: http://www.yacreader.com
 Package: yacreader
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, qml-module-qtquick-controls2,
-  qml-module-qtgraphicaleffects, qt5-image-formats-plugins
+  qml-module-qtquick-layouts, qml-module-qtgraphicaleffects,
+  qt5-image-formats-plugins
 Description: Yet another comic reader
  YACReader is a free cross-platform comic reader with support for multiple
  comic files and image formats. YACReader comes with YACReaderLibrary,
