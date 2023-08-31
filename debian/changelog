@@ -1,8 +1,14 @@
+yacreader (9.13.1-2) unstable; urgency=medium
+
+  * Update runtime dependencies
+
+ -- Felix Kauselmann <licorn@gmail.com>  Wed, 30 Aug 2023 23:31:47 +0200
+
 yacreader (9.13.1-1) unstable; urgency=medium
 
   * New upstream version 9.13.1
 
- -- Felix Kauselmann <licorn@gmail.com>  Fri, 28 Jul 2023 19:08:56 +0200
+ -- Felix Kauselmann <licorn@gmail.com>  Wed, 30 Aug 2023 23:06:56 +0200
 
 yacreader (9.12.0-1) unstable; urgency=medium
 
