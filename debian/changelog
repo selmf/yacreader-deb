@@ -1,3 +1,9 @@
+yacreader (9.14.2-1) unstable; urgency=medium
+
+  * New upstream version 9.14.2
+
+ -- Felix Kauselmann <licorn@gmail.com>  Fri, 16 Feb 2024 10:17:29 +0100
+
 yacreader (9.13.1-2) unstable; urgency=medium
 
   * Update runtime dependencies
